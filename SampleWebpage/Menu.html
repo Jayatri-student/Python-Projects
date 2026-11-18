@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu-Driven Page</title>
+        <link rel="stylesheet" href="style2.css">
+
+    </head>
+    <body>
+        <h1><center>ABC Company</center></h1>
+        <img src="company.jpg" alt="ABC Company">
+        <h2>Main Menu</h2>
+        <h3>Choose an option:</h3>
+        <nav>
+            
+            <a href="#Home">Home</a> |
+            <a href="#About">About</a> |
+            <a href="#Our Products">Our Products</a> |
+            <a href="#Contact">Contact</a> |
+            <a href="#Services">Services</a> |
+            <a href="#Exit">Exit</a> |
+        </nav>
+        <hr> 
+        <h2 id="Home">Home</h2>
+        <p>Welcome to ABC Company </p>
+        <hr>
+        <h2 id="About">About</h2>
+        <p>We are a leading provider of innovative solutions in the field of technology. Our team of experts is dedicated to delivering high-quality products and services to our clients.</p>
+        <hr>
+        <h2 id="Our Products">Our Products</h2>
+        <p>We offer a Wide Range of Products IOTs and AI integrated devices which we can use in various applications.
+            <ol>
+                <li>Smart Home Devices</li>
+                <li>Industrial IoT Solutions</li>
+                <li>AI-Powered Analytics Tools</li>
+            </ol>
+        </p>
+        <hr>
+        <h2 id="Contact">Contact</h2>
+        <p>Email: contact@abccompany.com</p>
+        <p>Phone: 9107890345</p>
+        <p>Address: 123 Main Street, Bangalore, Karnataka</p>
+        <h3>Send us a message:</h3>
+        <form action="contact.html" method="post">
+            <h2>Contact Us</h2>
+
+<form id="contactForm">
+
+    <label>Name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+    <br><br>
+
+    <label>Phone:</label>
+    <input type="tel" id="phone" required>
+    <br><br>
+
+    <label>Message:</label>
+    <textarea id="message" required></textarea>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+    <p id="error"></p>
+
+</form>
+        <hr>
+        <h2 id="Services">Services</h2>
+        <p>We offer a wide range of services to meet your business needs.</p>
+        <hr>
+        <h2 id="Exit">Exit</h2>
+        <p>Thank you for visiting our website. Have a great day!</p>
+        </hr>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let error = document.getElementById("error");
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        error.innerHTML = "Incorrect email! Please enter a valid email.";
+        error.style.color = "red";
+    }
+    else {
+        error.innerHTML = "Email is valid!";
+        error.style.color = "green";
+    }
+
+});
+</script>
+    </body>
+</html>
