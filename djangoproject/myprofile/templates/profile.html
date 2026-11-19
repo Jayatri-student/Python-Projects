@@ -1,0 +1,259 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jayatri Mohinta | Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">Jayatri<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-button">Get in Touch</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="greeting">HELLO, I'M</p>
+
+        <h1>Jayatri <span>Mohinta</span></h1>
+
+        <h2>Computer Science Engineering Student</h2>
+
+        <p>
+            Exploring the world of Artificial Intelligence,
+            Machine Learning and Quantum Computing.
+            Passionate about technology, research and
+            building meaningful solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="{% static 'images/profile.jpeg' %}"
+             alt="Jayatri Mohinta">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <p class="about-text">
+        I am a Computer Science Engineering student pursuing
+        my B.E. at Gopalan College of Engineering and Management.
+        I have a strong interest in Machine Learning and
+        Quantum Computing.
+
+        I enjoy learning technologies in depth, exploring
+        research opportunities and developing practical
+        software applications.
+    </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <h2 class="section-title">My <span>Skills</span></h2>
+
+    <div class="skill-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Django</div>
+    </div>
+
+    <h3 class="sub-heading">Core Interests</h3>
+    <div class="interest-list">
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>Quantum Computing</span>
+        <span>Research & Development</span>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Insurance Management System</h3>
+            <p>
+                A Django-based insurance management web
+                application with MySQL integration for
+                policy management and database operations.
+            </p>
+            <small>Python | Django | MySQL</small>
+        </div>
+
+        <div class="project-card">
+            <h3>Grocery Store Management System</h3>
+            <p>
+                A Python application with a Tkinter GUI
+                for product, billing, inventory and
+                order management.
+            </p>
+            <small>Python | MySQL | Tkinter</small>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather Forecast System</h3>
+            <p>
+                A dynamic weather application integrating
+                a web frontend with a Java backend to
+                display live weather information.
+            </p>
+            <small>HTML | CSS | JavaScript | Java</small>
+        </div>
+
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section">
+    <h2 class="section-title">My <span>Education</span></h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>B.E. Computer Science Engineering</h3>
+            <p>Gopalan College of Engineering and Management</p>
+            <span>2024 – 2028</span>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Class XII – CBSE (PCMB)</h3>
+            <p>Vagdevi Vilas School, Bengaluru</p>
+            <span>2024 | 72%</span>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Class X – CBSE</h3>
+            <p>Vagdevi Vilas School, Bengaluru</p>
+            <span>2022 | 85%</span>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+    <h2 class="section-title">Certifications & <span>Achievements</span></h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Computer Networks</h3>
+            <p>NPTEL – Top 2% among learners</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Algorithmic Graph Theory and Data Structures</h3>
+            <p>NPTEL</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Operating System Fundamentals</h3>
+            <p>NPTEL</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Java Programming Fundamental</h3>
+            <p>Coursera</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Data Structure and Algorithm:
+                The Complete Masterclass</h3>
+            <p>Coursera</p>
+        </div>
+
+        <div class="project-card">
+            <h3>National AI Olympiad 2025</h3>
+            <p>Achieved 22nd State Rank</p>
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="section">
+    <h2 class="section-title">Events & <span>Experiences</span></h2>
+
+    <div class="project-card event-card">
+        <h3>Qiskit Fall Fest 2026</h3>
+        <p class="event-organizer">
+            University of Calcutta | In collaboration with IBM Quantum
+        </p>
+        <p>
+            Attended Qiskit Fall Fest 2026, a quantum computing
+            learning event that provided an opportunity to
+            explore quantum computing concepts, learn from
+            experts and interact with the quantum computing
+            community.
+        </p>
+        <small>October 2026</small>
+    </div>
+    <div class="project-card event-card">
+        <h3>TEDx GCEM</h3>
+        <p class="event-organizer">
+            Gopalan College of Engineering
+        </p>
+        <p>
+            Attended TEDx GCEM to explore new perspectives
+        </p>
+        <small>September 2026</small>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+
+    <p>I'm always interested in learning, collaborating
+       and exploring new opportunities.</p>
+
+    <a href="mailto:jayatri.mohinta@gmail.com" class="btn primary">
+        Email Me
+    </a>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/jayatri-mohinta/"
+           target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Jayatri Mohinta. All Rights Reserved.</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
